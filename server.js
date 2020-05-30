@@ -22,10 +22,6 @@ app.post('/api/fileanalyse', upload.single('upfile'), function (req, res, next) 
   })
 })
 
-app.get('/hello', function(req, res){
-  res.json({greetings: "Hello, API"});
-});
-
 app.listen(process.env.PORT || 3000, function () {
   console.log('Node.js listening... http://localhost:3000');
 });
