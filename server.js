@@ -2,8 +2,10 @@
 
 var express = require('express');
 var cors = require('cors');
+var multer = require('multer');
 
 // require and use "multer"...
+
 
 var app = express();
 
@@ -19,5 +21,5 @@ app.get('/hello', function(req, res){
 });
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log('Node.js listening ...');
+  console.log('Node.js listening... http://localhost:3000');
 });
